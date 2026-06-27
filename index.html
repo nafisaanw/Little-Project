@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wond</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1>A Lovely Day!</h1>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#pict">Picta</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="slider">
+        <img id="slide" src="images/lion.jpeg" alt="slide image">
+    </div>
+
+    <h2>Explore Our Memory in 25/6.26</h2>
+    <p>Learn about the gratefulness and happiness.</p>
+
+</section>
+
+<!-- CONTROLS -->
+<div class="controls">
+
+    <input type="text" id="searchInput" placeholder="Search pict...">
+
+    <select id="filterSelect">
+        <option value="all">All</option>
+        <option value="paskal">Paskal 23</option>
+    </select>
+
+    <button id="darkToggle">🌙 Dark Mode</button>
+
+</div>
+
+<!-- PICT SECTION -->
+<section id="pict">
+
+    <h2 class="section-title">Memories</h2>
+
+    <div class="pict-container">
+
+        <div class="card" data-region="paskal">
+            <img src="images/lion.jpeg" alt="Photobooth Rave">
+            <h3>Photobooth Rave</h3>
+            <p>Retake berkali kali of course.</p>
+            <h4>Location</h4>
+            <p>📍 Paskal 23 Parking Lot</p>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <div class="card" data-region="paskal">
+            <img src="images/elephant.jpeg" alt="All Along">
+            <h3>All Along</h3>
+            <p>You Hug Me, and I Hug You.</p>
+            <h4>Location</h4>
+            <p>📍 Paskal 23 Parking Lot</p>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <div class="card" data-region="paskal">
+            <img src="images/tiger.jpeg" alt="Binding Vows">
+            <h3>Binding Vows</h3>
+            <p>Powerful yet so soft.</p>
+            <h4>Location</h4>
+            <p>📍 Paskal 23 Parking Lot</p>
+            <button class="read-more">Read More</button>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeBtn">&times;</span>
+        <div id="modalText"></div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
